@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "chai": "^4.3.6",
     "circomlib": "^2.0.3",
     "circomlibjs": "^0.1.2",
-    "hardhat": "^2.9.1",
+    "hardhat": "^2.12.2",
     "hardhat-circom": "^3.3.2"
   },
   "engines": {
@@ -18,5 +17,19 @@
     "circom:dev": "hardhat circom --deterministic --debug --verbose",
     "circom:prod": "hardhat circom --verbose",
     "test": "hardhat test"
-  }
+  },
+  "description": "A basic circom project using [Hardhat](https://github.com/nomiclabs/hardhat) and [hardhat-circom](https://github.com/projectsophon/hardhat-circom). This combines the multiple steps of the [Circom](https://github.com/iden3/circom) and [SnarkJS](https://github.com/iden3/snarkjs) workflow into your [Hardhat](https://hardhat.org) workflow.",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xPARC/circom-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/0xPARC/circom-starter/issues"
+  },
+  "homepage": "https://github.com/0xPARC/circom-starter#readme"
 }
