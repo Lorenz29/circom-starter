@@ -6,10 +6,12 @@ template Main() {
   signal x_cubed;
   signal output out;
 
+// Witnesses
   x_squared <-- x * x;
   x_cubed <-- x_squared * x;
   out <-- x_cubed - x + 7;
 
+// Constraints
   x_squared === x * x;
   x_cubed === x_squared * x;
   out === x_cubed - x + 7;

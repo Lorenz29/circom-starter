@@ -11,10 +11,12 @@ template Main() {
 
   signal output out;
 
+  //Witnesses
   y1 <-- x1 + x2;
   y2 <-- y1 / x3;
   out <-- y2 - x4;
 
+  //Constraints
   y1 === x1 + x2;
   y1 === y2 * x3;
   out === y2 - x4;
