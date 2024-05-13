@@ -14,7 +14,7 @@ template Main() {
 // Constraints
   x_squared === x * x;
   x_cubed === x_squared * x;
-  out === x_cubed - x + 7;
+  out === x_cubed - x + 3;
 }
 
 component main = Main();
