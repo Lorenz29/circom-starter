@@ -13,12 +13,24 @@ template Num2FourBits () {
     signal output b2;
     signal output b3;
     
-    
+    // Witnesses
+    b0 <-- x % 2;
+    b1 <-- x \ 2 % 2;
+    b2 <-- x \ 4 % 2;
+    b3 <-- x \ 8 % 2;
+
+
+    // Constraint
+    b0 * (b0 -1) === 0;
+    b1 * (b1 -1) === 0;
+    b2 * (b2 -1) === 0;
+    b3 * (b3 -1) === 0;
+
+    1*b0 + 2*b1 + 4*b2 + 8*b3 === x;
 }
 
-component main { public [ a ] } = Example();
+component main { public [ x ] } = Num2FourBits();
 
 /* INPUT = {
-    "a": "5",
-    "b": "77"
+    "x": "0",
 } */
