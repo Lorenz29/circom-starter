@@ -1,0 +1,7 @@
+{
+  "name": "circuits",
+  "version": "1.0.0",
+  "description": "Comparators",
+  "main": "index.js",
+  "license": "MIT"
+}
