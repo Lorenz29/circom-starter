@@ -8,7 +8,7 @@ template NftMint() {
     signal input hash;
     signal input address;
 
-    // The private inputs
+    // The private inputs..
     signal input preimage;
 
     // Hash the preimage and check if the result matches the hash.
